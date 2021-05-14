@@ -29,6 +29,19 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>${app.runtime}</muleVersion>
+						<username>developerhegde90</username>
+						<password>Munakshatra@10</password>
+						<applicationName>testcicd</applicationName>
+						<environment>Sandbox</environment>
+				      <workers>1</workers>
+				      <workerType>MICRO</workerType>
+				      <properties>
+				        <key>value</key>
+				      </properties>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
