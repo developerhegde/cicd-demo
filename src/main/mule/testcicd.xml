@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="testcicdFlow" doc:id="2cce8799-37ce-4677-9889-4f1a7731c626" >
+		<scheduler doc:name="Scheduler" doc:id="e5732a80-a61f-48b8-a86c-83e7ddd164a5" >
+			<scheduling-strategy >
+				<fixed-frequency frequency="10" timeUnit="MINUTES"/>
+			</scheduling-strategy>
+		</scheduler>
+		<logger level="INFO" doc:name="Logger" doc:id="eacfcd1f-0638-486f-bcfa-132785ec57dd" message="CICD Test Project running"/>
+	</flow>
+</mule>
